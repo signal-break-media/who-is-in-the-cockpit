@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Who Is Responsible When an AI Kills? | Signal Break</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-logo">SIGNAL<span class="nav-logo-accent">BREAK</span></div>
+      <ul class="nav-links">
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Defense</a></li>
+        <li><a href="#">AI</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#" class="nav-cta">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-kicker">
+        <span class="kicker-tag">Defense &amp; AI</span>
+        <span class="kicker-read">15 min read</span>
+      </div>
+      <h1 class="hero-title">Who Is Responsible<br>When an <em>AI Kills?</em></h1>
+      <p class="hero-subtitle">Autonomous combat aircraft can already outmaneuver human pilots. The harder engineering and legal question is what happens next: when an AI weapon kills someone, who answers for it?</p>
+      <div class="hero-meta">
+        <span class="byline">By <strong>Enrique Garcia</strong></span>
+        <span class="meta-divider">&middot;</span>
+        <span>Spring 2026</span>
+        <span class="meta-divider">&middot;</span>
+        <span>ENGR 3100 Technical Writing &middot; WashU</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+        <rect width="800" height="420" fill="#080c18"/>
+        <g opacity="0.5">
+          <circle cx="80" cy="40" r="1" fill="#fff"/><circle cx="200" cy="20" r="1.2" fill="#fff"/>
+          <circle cx="350" cy="55" r="0.8" fill="#fff"/><circle cx="500" cy="15" r="1.1" fill="#fff"/>
+          <circle cx="650" cy="38" r="0.9" fill="#fff"/><circle cx="720" cy="70" r="1" fill="#fff"/>
+          <circle cx="140" cy="80" r="0.7" fill="#fff"/><circle cx="420" cy="30" r="1.3" fill="#fff"/>
+          <circle cx="580" cy="60" r="0.6" fill="#fff"/><circle cx="760" cy="25" r="1" fill="#fff"/>
+          <circle cx="300" cy="90" r="0.9" fill="#fff"/><circle cx="50" cy="100" r="0.8" fill="#fff"/>
+        </g>
+        <ellipse cx="400" cy="300" rx="400" ry="80" fill="#12254a" opacity="0.6"/>
+        <g transform="translate(400,200) rotate(-6)">
+          <ellipse cx="0" cy="0" rx="95" ry="11" fill="#c0c8da"/>
+          <polygon points="95,0 138,-4 138,4" fill="#a8b2c6"/>
+          <ellipse cx="28" cy="-9" rx="30" ry="9" fill="#1e2d50"/>
+          <ellipse cx="28" cy="-9" rx="27" ry="7" fill="#162240" opacity="0.9"/>
+          <polygon points="-15,0 -82,52 -82,62 12,10" fill="#9aa4b8"/>
+          <polygon points="-15,0 -82,-52 -82,-62 12,-10" fill="#aab4c6"/>
+          <polygon points="-68,0 -102,-38 -92,-38 -58,0" fill="#8a94a8"/>
+          <polygon points="-65,3 -102,28 -97,31 -57,6" fill="#8a94a8"/>
+          <polygon points="-65,-3 -102,-28 -97,-31 -57,-6" fill="#8a94a8"/>
+          <ellipse cx="-92" cy="0" rx="11" ry="11" fill="#c04000" opacity="0.95"/>
+          <ellipse cx="-92" cy="0" rx="7" ry="7" fill="#ff8800"/>
+          <ellipse cx="-92" cy="0" rx="3.5" ry="3.5" fill="#fff5cc"/>
+          <line x1="-92" y1="-5" x2="-152" y2="-14" stroke="#ff5500" stroke-width="2" opacity="0.45"/>
+          <line x1="-92" y1="0" x2="-162" y2="0" stroke="#ff8800" stroke-width="3" opacity="0.55"/>
+          <line x1="-92" y1="5" x2="-152" y2="14" stroke="#ff5500" stroke-width="2" opacity="0.45"/>
+        </g>
+        <rect x="305" y="130" width="190" height="140" fill="none" stroke="#00ff88" stroke-width="0.6" opacity="0.25"/>
+        <line x1="305" y1="200" x2="338" y2="200" stroke="#00ff88" stroke-width="0.6" opacity="0.35"/>
+        <line x1="452" y1="200" x2="495" y2="200" stroke="#00ff88" stroke-width="0.6" opacity="0.35"/>
+        <circle cx="400" cy="200" r="22" fill="none" stroke="#00ff88" stroke-width="0.6" opacity="0.25"/>
+        <text x="310" y="145" fill="#00ff88" font-size="6.5" font-family="monospace" opacity="0.7">ALT 35,000ft</text>
+        <text x="440" y="145" fill="#00ff88" font-size="6.5" font-family="monospace" opacity="0.7">M 1.42</text>
+        <text x="310" y="262" fill="#00ff88" font-size="6.5" font-family="monospace" opacity="0.7">AI-CTRL ACTIVE</text>
+        <text x="432" y="262" fill="#ff3300" font-size="6.5" font-family="monospace" opacity="0.9">NO PILOT</text>
+        <rect x="0" y="360" width="800" height="60" fill="#080c18"/>
+        <line x1="0" y1="360" x2="800" y2="360" stroke="#1a3a6e" stroke-width="0.8" opacity="0.5"/>
+      </svg>
+      <p class="image-caption">DARPA&#8217;s X-62A VISTA conducted the world&#8217;s first AI-versus-human live dogfight in September 2023 over Edwards Air Force Base, California.</p>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-wrap">
+
+      <article class="article-body">
+
+        <p class="abstract-block"><strong>Abstract:</strong> This article examines the emergence of artificial intelligence in combat aviation and the resulting accountability crisis. Drawing on peer-reviewed scholarship in international humanitarian law, UN and ICRC reports, and U.S. Department of Defense testing data, the article argues that the global community is deploying lethal autonomous weapons systems faster than it is developing the legal and ethical frameworks needed to govern them. The audience is technically informed general readers interested in the intersection of AI, military technology, and international law.</p>
+
+        <h2>I. The Kill That No One Owned</h2>
+
+        <p class="lede">Imagine a courtroom. A family has lost someone. The question before the judge is simple: who pulled the trigger? The soldier says it was the machine. The programmer says the algorithm did what it was trained to do. The commanding officer says he authorized a mission, not a specific strike. The manufacturer says the system performed within specifications. The courtroom falls silent. There is no one left to blame.</p>
+
+        <p>This is not a hypothetical from a legal philosophy seminar. It is the operational reality that defense attorneys, international law scholars, and human rights advocates say we are building toward with every autonomous weapons program currently in development. And it is no longer a distant concern.</p>
+
+        <p>In September 2023, the U.S. Air Force and DARPA conducted the world&#8217;s first live dogfight between an AI-controlled aircraft and a human pilot. The AI flew a modified F-16 known as the X-62A VISTA. The two jets closed to within 2,000 feet of each other at speeds exceeding 1,200 miles per hour. When officials were asked who won, they declined to answer, citing national security (Defense One, 2024; Breaking Defense, 2024). The details are classified. The capability is not. And the legal and ethical frameworks needed to govern that capability remain, as of this writing, entirely absent from binding international law.</p>
+
+        <div class="pull-quote">
+          <blockquote>&#8220;We are deploying technologies that make lethal decisions while systematically removing the humans whose job judgment has always been.&#8221;</blockquote>
+        </div>
+
+        <p>This article examines three interlocking questions. First: what, technically, has been achieved in autonomous combat aviation, and how close are we to fully autonomous lethal systems? Second: what legal and ethical problems does autonomy create, and why are existing frameworks insufficient? Third: what are the geopolitical and structural barriers that prevent the international community from governing these systems before they cause irreversible harm?</p>
+
+        <h2>II. From Remote Control to Machine Judgment</h2>
+
+        <p>The history of unmanned military aviation is a history of gradually increasing autonomy. The MQ-9 Reaper, the most recognizable armed drone in the U.S. arsenal, is a remotely piloted aircraft: it is flown by a human operator, often from a ground control station thousands of miles away, who watches a video feed and makes the decision to fire. The machine does not decide. It executes. International humanitarian law has long been designed around exactly this model: a human being with a weapon, choosing a target, bearing responsibility (Human Rights Watch, 2015).</p>
+
+        <p>What the X-62A VISTA represents is a categorical departure. DARPA&#8217;s Air Combat Evolution (ACE) program, launched in 2019, was designed not just to demonstrate that AI could fly a fighter jet, but to demonstrate that machine learning agents could be <em>trusted</em> to do so. In August 2020, AI agents defeated human pilots in simulated F-16 combat during the AlphaDogfight Trials. By December 2022, the AI had migrated from simulation to a real aircraft, logging over 17 hours of autonomous flight time at Edwards Air Force Base (DARPA, 2023). By September 2023, the AI was fighting a human pilot in live, within-visual-range combat at closing speeds of 1,200 miles per hour (Defense One, 2024).</p>
+
+        <p>The X-62A carried two human safety pilots with the authority to disengage the AI. Crucially, they never had to (The Aviationist, 2024). The ACE team made over 100,000 lines of flight-critical software changes across 21 test flights in under a year, an &#8220;unprecedented pace of development&#8221; according to DARPA (Flight Global, 2024). Secretary of the Air Force Frank Kendall described the 2023 tests as a &#8220;transformational moment&#8221; in combat aviation.</p>
+
+        <div class="stat-row">
+          <div class="stat-card">
+            <span class="stat-num">2023</span>
+            <span class="stat-label">Year of first AI vs. human live dogfight at Edwards AFB</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100K+</span>
+            <span class="stat-label">Lines of flight-critical software changed across 21 test flights in under one year</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">0</span>
+            <span class="stat-label">Binding international treaties governing lethal autonomous weapons as of 2026</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">166</span>
+            <span class="stat-label">UN member states voting in favor of a LAWS resolution, December 2024</span>
+          </div>
+        </div>
+
+        <h2>III. The Accountability Gap</h2>
+
+        <p>The term &#8220;accountability gap&#8221; was introduced to the academic literature by Michael Schmitt and Jeffrey Thurnher in their 2013 article &#8220;Out of the Loop: Autonomous Weapon Systems and the Law of Armed Conflict,&#8221; published in the Harvard National Security Journal. Their argument was precise: when an autonomous system makes a targeting decision that violates international humanitarian law, the traditional chain of accountability breaks down. The programmer was not present. The commanding officer did not authorize the specific strike. The soldier did not aim. The machine cannot be tried, imprisoned, or punished. The result is a gap in legal accountability that may render certain autonomous strikes legally unreviewable (Schmitt &amp; Thurnher, 2013).</p>
+
+        <p>International humanitarian law (IHL), the body of rules governing the conduct of armed conflict, is built on three interlocking principles: distinction (combatants must distinguish between military targets and civilians), proportionality (harm to civilians must not be excessive relative to military advantage), and precaution (reasonable steps must be taken to minimize civilian harm). These principles all assume, at their core, a human exercising judgment in real time. The ICRC has argued that IHL rules are &#8220;addressed to those who plan, decide upon, and carry out an attack,&#8221; meaning the lawful use of autonomous weapons requires that &#8220;combatants retain a level of human control over their functioning in carrying out an attack&#8221; (ICRC, 2016).</p>
+
+        <div class="pull-quote pull-quote--alt">
+          <blockquote>&#8220;There are obstacles to holding individual operators criminally liable for the unpredictable actions of a machine they cannot understand, in particular because autonomous weapons systems that rely on AI may make determinations through opaque, &#8216;black box&#8217; processes.&#8221;
+            <cite>Human Rights Watch, 2025</cite>
+          </blockquote>
+        </div>
+
+        <p>The Human Rights Watch elaborated on this concern in a December 2025 report, documenting how autonomous weapons systems implicate at least six core obligations of international human rights law, including the right to life and the right to remedy. The report emphasized that the opacity of AI decision-making creates legal challenges to finding both operators and developers responsible for autonomous weapons behavior (Human Rights Watch, 2025).</p>
+
+        <h2>IV. The Line May Already Be Crossed: Libya, 2019</h2>
+
+        <p>In March 2021, a UN Panel of Experts released its final report on the armed conflict in Libya. Buried in the document was a passage that alarmed legal scholars worldwide. The panel reported that a Turkish-manufactured Kargu-2 loitering munition, capable of autonomous target selection, may have &#8220;autonomously attack[ed]&#8221; personnel from Libyan National Army forces without a human operator authorizing the strike (UN Panel of Experts, 2021).</p>
+
+        <p>If accurate, this was the first recorded instance of a lethal autonomous weapon system making an independent targeting decision in actual combat. The Kargu-2 can be operated in a mode where a human operator controls it, or in a mode where it selects targets autonomously. The distinction between those modes is a software setting. The legal and moral difference between them is the entire project of international humanitarian law.</p>
+
+        <div class="pull-quote">
+          <blockquote>&#8220;A lethal autonomous weapon system may have already made a targeting decision in combat without human authorization. The world largely moved on.&#8221;</blockquote>
+        </div>
+
+        <p>No individual has been held responsible. No investigation into autonomous decision-making in that engagement has been made public. The absence of accountability is itself informative: the international community lacks not just the rules but the institutional capacity to investigate or adjudicate autonomous strikes.</p>
+
+        <h2>V. An Arms Race With No Referee</h2>
+
+        <p>The United States, China, and Russia are all investing heavily in AI-enabled military aviation. All three recognize the potential strategic advantage that autonomous systems could provide. And all three are acutely aware that imposing unilateral ethical constraints on their own systems could result in fielding less capable weapons than adversaries who impose no such constraints (Horowitz, 2018; Arms Control Association, 2025).</p>
+
+        <p>The international forum most directly engaged with autonomous weapons governance is the Convention on Certain Conventional Weapons (CCW) Group of Governmental Experts. In 2019, the group agreed on 11 guiding principles, including the full applicability of IHL and the need for &#8220;human accountability across the entire life cycle&#8221; of autonomous systems (Arms Control Association, 2025). However, the CCW operates by consensus, meaning any one of its member states can block progress.</p>
+
+        <p>In December 2024, the UN General Assembly adopted a resolution on Lethal Autonomous Weapons Systems with 166 votes in favor and only 3 opposed (Belarus, North Korea, and Russia). But a General Assembly resolution is not a treaty. It creates no binding legal obligations. It represents moral and diplomatic pressure, not enforceable law (ASIL, 2025).</p>
+
+        <p>This dynamic has been described by some observers as an &#8220;Oppenheimer moment&#8221;: a point at which the scientists and engineers developing a transformative weapons technology recognize its implications and call for governance frameworks that political and military institutions are not yet prepared to provide (Arms Control Association, 2025).</p>
+
+        <h2>VI. The Humanitarian Case For and Against</h2>
+
+        <p>It would be intellectually dishonest to present autonomy in weapons systems as purely a threat. Proponents make a genuine humanitarian argument: machines do not experience fear, fatigue, or rage. In theory, a well-designed autonomous system might be more discriminating than a frightened soldier in a chaotic urban environment, precisely because it processes sensor data without emotional noise.</p>
+
+        <p>Secretary of the Air Force Frank Kendall made this argument explicitly, emphasizing that the ACE program demonstrated AI &#8220;complied with American norms for safe and ethical use of autonomous technology&#8221; (DARPA, 2024).</p>
+
+        <div class="pull-quote pull-quote--alt">
+          <blockquote>&#8220;Capability is not permission. That a machine can make a targeting decision does not mean we have resolved who bears the moral and legal weight of that decision.&#8221;</blockquote>
+        </div>
+
+        <p>The counterargument operates on multiple levels. Autonomous weapons &#8220;present unique risks to civilian safety by diminishing the ability of combatants to differentiate accurately between lawful and unlawful targets,&#8221; particularly in irregular warfare contexts and complex urban environments where machine learning systems are least equipped to handle ambiguity reliably (Budustour, 2024).</p>
+
+        <p>There is also a deeper philosophical objection. The ICRC has argued that using lethal force against a person without a human making the decision may violate human dignity in a way that transcends specific IHL rules, invoking the Martens Clause: that civilians and combatants are protected by &#8220;the principles of humanity and the dictates of public conscience&#8221; even in situations not covered by existing treaties (ICRC, 2016). The question is not whether an AI can fire accurately. It is whether a killing without human moral agency can be legitimate at all.</p>
+
+        <h2>VII. What Adequate Governance Would Look Like</h2>
+
+        <p>The international community is not without options. The American Society of International Law, drawing on the 2024 CCW rolling text, has identified requirements that a future treaty on lethal autonomous weapons could mandate: systems must be predictable, reliable, traceable, and explainable; meaningful human oversight must be maintained particularly for targeting decisions; systems must be capable of being deactivated after deployment; and systems must not be deployed in areas densely populated with civilians (ASIL, 2025).</p>
+
+        <p>The concept of &#8220;meaningful human control&#8221; is central to most governance proposals. Its core idea: a human being must be able to understand, predict, and intervene in an autonomous weapon&#8217;s targeting decisions in a way that is substantively meaningful, not merely nominal. From an engineering standpoint, however, achieving this over a system operating at machine speeds presents genuine design challenges. An AI combat aircraft can make tactical decisions in microseconds. A human supervisor cannot realistically intervene in that timeframe. This suggests human control must be exercised upstream, in the design of engagement rules and deployment conditions, placing the full moral weight of targeting decisions on choices made months or years before any specific engagement.</p>
+
+        <h2>VIII. The Empty Cockpit</h2>
+
+        <p>The fighter jet banks hard. An algorithm assesses geometry, velocity, and threat probability in fractions of a millisecond. A targeting decision is made. No human directed it. No human could have stopped it. If someone dies, the courtroom will be as described at the opening of this article: full of humans, none of whom pulled the trigger.</p>
+
+        <p>This article has argued that the accountability gap is real, that it has already produced at least one incident in which it may have been exploited, that the geopolitical dynamics driving autonomous weapons development actively resist the governance frameworks that could close it, and that the technical capabilities being developed are outpacing both legal and ethical infrastructure by a widening margin.</p>
+
+        <p>What is required is not a ban on artificial intelligence in military aviation. What is required is a binding international legal framework that specifies what meaningful human control means in practice, who bears accountability when an autonomous weapon causes unlawful harm, and what types of systems and deployment contexts are categorically prohibited. The engineering community has a distinctive role to play: the systems being built encode ethical decisions, and the engineers who build them are, in a sense, making targeting choices before any specific mission is ever authorized.</p>
+
+        <p>The cockpit is empty. The question is not whether that is technically impressive. It is whether the world is ready for what that emptiness means.</p>
+
+        <div class="ai-disclosure">
+          <p><strong>AI Use Disclosure:</strong> In accordance with course policy, Claude (Anthropic, 2025) was used to assist with identifying additional scholarly sources, structuring the article&#8217;s argument, and producing the magazine-style website version of this article. All source material was independently verified by the author. Citation: Anthropic. (2025). Claude (claude-sonnet-4-6). https://claude.ai</p>
+        </div>
+
+        <div class="references-block">
+          <h3>References</h3>
+          <ol>
+            <li>American Society of International Law. (2025, January). Lethal autonomous weapons systems and international law. <em>ASIL Insights, 29</em>(1). <a href="https://www.asil.org/insights/volume/29/issue/1" target="_blank">asil.org</a></li>
+            <li>Anthropic. (2025). Claude (claude-sonnet-4-6) [Large language model]. https://claude.ai</li>
+            <li>Arms Control Association. (2025, January). Geopolitics and the regulation of autonomous weapons systems. <em>Arms Control Today.</em> <a href="https://www.armscontrol.org/act/2025-01/features/geopolitics-and-regulation-autonomous-weapons-systems" target="_blank">armscontrol.org</a></li>
+            <li>Budustour, L. (2024, November). AI &amp; autonomous weapons: Can international humanitarian law keep up? <em>SSRN.</em></li>
+            <li>Defense Advanced Research Projects Agency. (2023). ACE program AI agents transition from simulation to live flight. https://www.darpa.mil/news/2023/ace-program-transition</li>
+            <li>Defense Advanced Research Projects Agency. (2024, April 17). ACE program achieves world first for AI in aerospace. https://www.darpa.mil/news/2024/ace-ai-aerospace</li>
+            <li>Defense One. (2024, April 22). Man vs. machine: AI agents take on human pilot in dogfight. <a href="https://www.defenseone.com" target="_blank">defenseone.com</a></li>
+            <li>Breaking Defense. (2024, April). In a &#8216;world first,&#8217; DARPA project demonstrates AI dogfighting in real jet. <a href="https://breakingdefense.com" target="_blank">breakingdefense.com</a></li>
+            <li>Flight Global. (2024, April 19). DARPA tests dogfighting AI against human fighter pilot. <a href="https://www.flightglobal.com" target="_blank">flightglobal.com</a></li>
+            <li>Horowitz, M. C. (2018). Artificial intelligence, international competition, and the balance of power. <em>Texas National Security Review, 1</em>(3), 36&#8211;57.</li>
+            <li>Human Rights Watch. (2025, April). A hazard to human rights: Autonomous weapons systems and digital decision-making. <a href="https://www.hrw.org" target="_blank">hrw.org</a></li>
+            <li>International Committee of the Red Cross. (2016). <em>Autonomous weapon systems under international humanitarian law.</em> UNODA Occasional Papers, No. 30.</li>
+            <li>Lieber Institute, West Point. (2025, February). The future of warfare: National positions on the governance of lethal autonomous weapons systems. <a href="https://lieber.westpoint.edu" target="_blank">lieber.westpoint.edu</a></li>
+            <li>Schmitt, M. N., &amp; Thurnher, J. S. (2013). &#8220;Out of the loop&#8221;: Autonomous weapon systems and the law of armed conflict. <em>Harvard National Security Journal, 4</em>(2), 231&#8211;281.</li>
+            <li>The Aviationist. (2024, April 18). AI flew X-62 VISTA during simulated dogfight against manned F-16. <a href="https://theaviationist.com" target="_blank">theaviationist.com</a></li>
+            <li>United Nations General Assembly. (2024, December 2). <em>Lethal autonomous weapons systems</em> (Resolution 79/62).</li>
+            <li>United Nations Panel of Experts on Libya. (2021). <em>Final report of the Panel of Experts on Libya.</em> United Nations.</li>
+          </ol>
+        </div>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-widget">
+          <p class="sidebar-label">About this project</p>
+          <p class="sidebar-body">Final research project for ENGR 3100 Technical Writing, Washington University in St. Louis, Spring 2026. Magazine-style article for a general but technically informed audience.</p>
+        </div>
+        <div class="sidebar-widget">
+          <p class="sidebar-label">Key Terms</p>
+          <dl class="sidebar-dl">
+            <dt>Meaningful human control</dt>
+            <dd>The principle that a human must be able to understand, predict, and intervene in an autonomous weapon&#8217;s targeting decisions in a substantively meaningful way.</dd>
+            <dt>IHL</dt>
+            <dd>International Humanitarian Law: the rules governing armed conflict, including distinction, proportionality, and precaution.</dd>
+            <dt>CCA Program</dt>
+            <dd>The U.S. Air Force Collaborative Combat Aircraft initiative to deploy autonomous drone wingmen alongside crewed jets.</dd>
+            <dt>CCW Group of Experts</dt>
+            <dd>The Convention on Certain Conventional Weapons forum where states negotiate international rules on autonomous weapons.</dd>
+          </dl>
+        </div>
+        <div class="sidebar-widget sidebar-dark">
+          <p class="sidebar-label sidebar-label-light">Timeline</p>
+          <ul class="timeline-list">
+            <li><span class="tl-year">2013</span><span class="tl-event">Schmitt &amp; Thurnher identify the accountability gap</span></li>
+            <li><span class="tl-year">2019</span><span class="tl-event">CCW agrees on 11 guiding principles for LAWS</span></li>
+            <li><span class="tl-year">2020</span><span class="tl-event">AlphaDogfight Trials: AI defeats human in simulation</span></li>
+            <li><span class="tl-year">2021</span><span class="tl-event">UN reports possible autonomous strike in Libya</span></li>
+            <li><span class="tl-year">Sep 2023</span><span class="tl-event">X-62A conducts world&#8217;s first AI vs. human live dogfight</span></li>
+            <li><span class="tl-year">Dec 2024</span><span class="tl-event">UN General Assembly: 166 nations vote for LAWS resolution</span></li>
+            <li><span class="tl-year">2026</span><span class="tl-event">CCA enters testing. No binding treaty exists.</span></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">SIGNAL<span>BREAK</span></div>
+      <p>A student publication &middot; ENGR 3100 Technical Writing &middot; Washington University in St. Louis &middot; Spring 2026</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
